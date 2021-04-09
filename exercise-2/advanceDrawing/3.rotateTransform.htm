@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Rotate Transform</title>
+		<style type="text/css">
+			canvas {
+				border: dotted 1px black;
+				margin: 25px;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script type="text/javascript">
+			window.addEventListener("load", function () {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var context = theCanvas.getContext("2d");
+					if (context) {
+						context.fillStyle = "blue";
+						context.fillRect(150, 30, 100, 50);
+
+						// Rotate the rect by half a radian
+						// I redesigned the canvas
+						context.rotate(.1);
+						context.fillRect(180, 30, 100, 50);
+
+						// Rotate an object around a different point by using translate
+						context.translate(context.canvas.width / 1.5, context.canvas.height / 2.5); //changing the value change the position
+						var radian = (Math.PI / 180) * 10;
+						for (var degrees = 0; degrees < 360; degrees += 10) {
+							context.rotate(radian);
+							context.beginPath();
+							context.moveTo(-100, 0);
+							context.lineTo(100, 0);
+							context.stroke();
+						}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>The Rotate Transform</h1>
+		<div id='content'>
+			<p>.</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

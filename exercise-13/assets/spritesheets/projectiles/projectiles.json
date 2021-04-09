@@ -1,0 +1,1490 @@
+{
+	"textures": [
+		{
+			"image": "projectiles.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1002,
+				"h": 248
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "explosion-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 192
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 1,
+						"w": 176,
+						"h": 185
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 176,
+						"h": 185
+					}
+				},
+				{
+					"filename": "fireball-north-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 12,
+						"w": 21,
+						"h": 39
+					},
+					"frame": {
+						"x": 1,
+						"y": 188,
+						"w": 21,
+						"h": 39
+					}
+				},
+				{
+					"filename": "fireball-east-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 23,
+						"w": 63,
+						"h": 18
+					},
+					"frame": {
+						"x": 1,
+						"y": 229,
+						"w": 63,
+						"h": 18
+					}
+				},
+				{
+					"filename": "fireball-north-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 12,
+						"w": 19,
+						"h": 39
+					},
+					"frame": {
+						"x": 24,
+						"y": 188,
+						"w": 19,
+						"h": 39
+					}
+				},
+				{
+					"filename": "fireball-south-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 14,
+						"w": 21,
+						"h": 38
+					},
+					"frame": {
+						"x": 45,
+						"y": 188,
+						"w": 21,
+						"h": 38
+					}
+				},
+				{
+					"filename": "fireball-west-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 22,
+						"w": 60,
+						"h": 19
+					},
+					"frame": {
+						"x": 66,
+						"y": 228,
+						"w": 60,
+						"h": 19
+					}
+				},
+				{
+					"filename": "fireball-north-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 12,
+						"w": 19,
+						"h": 38
+					},
+					"frame": {
+						"x": 68,
+						"y": 188,
+						"w": 19,
+						"h": 38
+					}
+				},
+				{
+					"filename": "fireball-south-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 14,
+						"w": 19,
+						"h": 38
+					},
+					"frame": {
+						"x": 89,
+						"y": 188,
+						"w": 19,
+						"h": 38
+					}
+				},
+				{
+					"filename": "fireball-north-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 12,
+						"w": 22,
+						"h": 37
+					},
+					"frame": {
+						"x": 110,
+						"y": 188,
+						"w": 22,
+						"h": 37
+					}
+				},
+				{
+					"filename": "fireball-west-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 21,
+						"w": 63,
+						"h": 20
+					},
+					"frame": {
+						"x": 128,
+						"y": 227,
+						"w": 63,
+						"h": 20
+					}
+				},
+				{
+					"filename": "fireball-north-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 12,
+						"w": 21,
+						"h": 37
+					},
+					"frame": {
+						"x": 134,
+						"y": 188,
+						"w": 21,
+						"h": 37
+					}
+				},
+				{
+					"filename": "fireball-south-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 15,
+						"w": 20,
+						"h": 37
+					},
+					"frame": {
+						"x": 157,
+						"y": 188,
+						"w": 20,
+						"h": 37
+					}
+				},
+				{
+					"filename": "explosion-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 192
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 9,
+						"w": 184,
+						"h": 183
+					},
+					"frame": {
+						"x": 179,
+						"y": 1,
+						"w": 184,
+						"h": 183
+					}
+				},
+				{
+					"filename": "fireball-north-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 12,
+						"w": 20,
+						"h": 36
+					},
+					"frame": {
+						"x": 179,
+						"y": 186,
+						"w": 20,
+						"h": 36
+					}
+				},
+				{
+					"filename": "fireball-west-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 22,
+						"w": 58,
+						"h": 21
+					},
+					"frame": {
+						"x": 193,
+						"y": 224,
+						"w": 58,
+						"h": 21
+					}
+				},
+				{
+					"filename": "fireball-north-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 12,
+						"w": 21,
+						"h": 35
+					},
+					"frame": {
+						"x": 201,
+						"y": 186,
+						"w": 21,
+						"h": 35
+					}
+				},
+				{
+					"filename": "fireball-south-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 21,
+						"y": 17,
+						"w": 21,
+						"h": 35
+					},
+					"frame": {
+						"x": 224,
+						"y": 186,
+						"w": 21,
+						"h": 35
+					}
+				},
+				{
+					"filename": "fireball-south-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 17,
+						"w": 19,
+						"h": 35
+					},
+					"frame": {
+						"x": 247,
+						"y": 186,
+						"w": 19,
+						"h": 35
+					}
+				},
+				{
+					"filename": "fireball-west-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 22,
+						"w": 58,
+						"h": 21
+					},
+					"frame": {
+						"x": 253,
+						"y": 223,
+						"w": 58,
+						"h": 21
+					}
+				},
+				{
+					"filename": "fireball-south-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 18,
+						"w": 22,
+						"h": 34
+					},
+					"frame": {
+						"x": 268,
+						"y": 186,
+						"w": 22,
+						"h": 34
+					}
+				},
+				{
+					"filename": "fireball-south-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 18,
+						"w": 21,
+						"h": 34
+					},
+					"frame": {
+						"x": 292,
+						"y": 186,
+						"w": 21,
+						"h": 34
+					}
+				},
+				{
+					"filename": "fireball-east-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 21,
+						"w": 56,
+						"h": 21
+					},
+					"frame": {
+						"x": 313,
+						"y": 222,
+						"w": 56,
+						"h": 21
+					}
+				},
+				{
+					"filename": "fireball-north-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 12,
+						"w": 19,
+						"h": 34
+					},
+					"frame": {
+						"x": 315,
+						"y": 186,
+						"w": 19,
+						"h": 34
+					}
+				},
+				{
+					"filename": "fireball-south-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 18,
+						"w": 19,
+						"h": 34
+					},
+					"frame": {
+						"x": 336,
+						"y": 186,
+						"w": 19,
+						"h": 34
+					}
+				},
+				{
+					"filename": "fireball-northeast-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 15,
+						"w": 48,
+						"h": 33
+					},
+					"frame": {
+						"x": 357,
+						"y": 186,
+						"w": 48,
+						"h": 33
+					}
+				},
+				{
+					"filename": "explosion-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 192
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 1,
+						"w": 167,
+						"h": 182
+					},
+					"frame": {
+						"x": 365,
+						"y": 1,
+						"w": 167,
+						"h": 182
+					}
+				},
+				{
+					"filename": "fireball-west-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 22,
+						"w": 56,
+						"h": 21
+					},
+					"frame": {
+						"x": 371,
+						"y": 221,
+						"w": 56,
+						"h": 21
+					}
+				},
+				{
+					"filename": "fireball-northwest-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 15,
+						"w": 48,
+						"h": 33
+					},
+					"frame": {
+						"x": 407,
+						"y": 185,
+						"w": 48,
+						"h": 33
+					}
+				},
+				{
+					"filename": "fireball-west-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 60,
+						"h": 20
+					},
+					"frame": {
+						"x": 429,
+						"y": 220,
+						"w": 60,
+						"h": 20
+					}
+				},
+				{
+					"filename": "fireball-northeast-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 15,
+						"w": 45,
+						"h": 33
+					},
+					"frame": {
+						"x": 457,
+						"y": 185,
+						"w": 45,
+						"h": 33
+					}
+				},
+				{
+					"filename": "fireball-west-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 22,
+						"w": 55,
+						"h": 20
+					},
+					"frame": {
+						"x": 491,
+						"y": 220,
+						"w": 55,
+						"h": 20
+					}
+				},
+				{
+					"filename": "fireball-southeast-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 17,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 504,
+						"y": 185,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-northwest-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 15,
+						"w": 46,
+						"h": 28
+					},
+					"frame": {
+						"x": 548,
+						"y": 219,
+						"w": 46,
+						"h": 28
+					}
+				},
+				{
+					"filename": "explosion-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 192
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 12,
+						"w": 183,
+						"h": 180
+					},
+					"frame": {
+						"x": 534,
+						"y": 1,
+						"w": 183,
+						"h": 180
+					}
+				},
+				{
+					"filename": "fireball-southwest-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 17,
+						"w": 48,
+						"h": 32
+					},
+					"frame": {
+						"x": 554,
+						"y": 183,
+						"w": 48,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-northwest-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 15,
+						"w": 48,
+						"h": 30
+					},
+					"frame": {
+						"x": 596,
+						"y": 217,
+						"w": 48,
+						"h": 30
+					}
+				},
+				{
+					"filename": "fireball-northwest-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 15,
+						"w": 47,
+						"h": 32
+					},
+					"frame": {
+						"x": 604,
+						"y": 183,
+						"w": 47,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-northeast-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 16,
+						"w": 47,
+						"h": 30
+					},
+					"frame": {
+						"x": 646,
+						"y": 217,
+						"w": 47,
+						"h": 30
+					}
+				},
+				{
+					"filename": "fireball-southeast-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 17,
+						"w": 47,
+						"h": 32
+					},
+					"frame": {
+						"x": 653,
+						"y": 183,
+						"w": 47,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-southeast-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 19,
+						"w": 46,
+						"h": 30
+					},
+					"frame": {
+						"x": 695,
+						"y": 217,
+						"w": 46,
+						"h": 30
+					}
+				},
+				{
+					"filename": "fireball-northeast-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 15,
+						"w": 46,
+						"h": 32
+					},
+					"frame": {
+						"x": 702,
+						"y": 183,
+						"w": 46,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-southeast-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 19,
+						"w": 45,
+						"h": 30
+					},
+					"frame": {
+						"x": 743,
+						"y": 217,
+						"w": 45,
+						"h": 30
+					}
+				},
+				{
+					"filename": "explosion-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 192
+					},
+					"spriteSourceSize": {
+						"x": 33,
+						"y": 35,
+						"w": 125,
+						"h": 136
+					},
+					"frame": {
+						"x": 719,
+						"y": 1,
+						"w": 125,
+						"h": 136
+					}
+				},
+				{
+					"filename": "explosion-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 192,
+						"h": 192
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 89,
+						"w": 60,
+						"h": 72
+					},
+					"frame": {
+						"x": 750,
+						"y": 139,
+						"w": 60,
+						"h": 72
+					}
+				},
+				{
+					"filename": "fireball-northwest-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 15,
+						"w": 46,
+						"h": 32
+					},
+					"frame": {
+						"x": 790,
+						"y": 213,
+						"w": 46,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-southwest-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 17,
+						"w": 46,
+						"h": 32
+					},
+					"frame": {
+						"x": 812,
+						"y": 139,
+						"w": 46,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-northeast-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 15,
+						"w": 43,
+						"h": 32
+					},
+					"frame": {
+						"x": 812,
+						"y": 173,
+						"w": 43,
+						"h": 32
+					}
+				},
+				{
+					"filename": "fireball-northeast-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 15,
+						"w": 47,
+						"h": 31
+					},
+					"frame": {
+						"x": 838,
+						"y": 207,
+						"w": 47,
+						"h": 31
+					}
+				},
+				{
+					"filename": "fireball-southwest-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 18,
+						"w": 47,
+						"h": 31
+					},
+					"frame": {
+						"x": 857,
+						"y": 173,
+						"w": 47,
+						"h": 31
+					}
+				},
+				{
+					"filename": "fireball-northwest-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 15,
+						"w": 45,
+						"h": 31
+					},
+					"frame": {
+						"x": 887,
+						"y": 206,
+						"w": 45,
+						"h": 31
+					}
+				},
+				{
+					"filename": "fireball-east-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 23,
+						"w": 60,
+						"h": 18
+					},
+					"frame": {
+						"x": 934,
+						"y": 1,
+						"w": 60,
+						"h": 18
+					}
+				},
+				{
+					"filename": "fireball-east-7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 22,
+						"w": 59,
+						"h": 19
+					},
+					"frame": {
+						"x": 934,
+						"y": 21,
+						"w": 59,
+						"h": 19
+					}
+				},
+				{
+					"filename": "fireball-east-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 23,
+						"w": 58,
+						"h": 19
+					},
+					"frame": {
+						"x": 934,
+						"y": 42,
+						"w": 58,
+						"h": 19
+					}
+				},
+				{
+					"filename": "fireball-east-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 23,
+						"w": 58,
+						"h": 19
+					},
+					"frame": {
+						"x": 934,
+						"y": 63,
+						"w": 58,
+						"h": 19
+					}
+				},
+				{
+					"filename": "fireball-west-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 58,
+						"h": 19
+					},
+					"frame": {
+						"x": 934,
+						"y": 84,
+						"w": 58,
+						"h": 19
+					}
+				},
+				{
+					"filename": "fireball-northwest-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 15,
+						"w": 45,
+						"h": 31
+					},
+					"frame": {
+						"x": 846,
+						"y": 105,
+						"w": 45,
+						"h": 31
+					}
+				},
+				{
+					"filename": "fireball-southeast-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 18,
+						"w": 45,
+						"h": 31
+					},
+					"frame": {
+						"x": 860,
+						"y": 138,
+						"w": 45,
+						"h": 31
+					}
+				},
+				{
+					"filename": "fireball-northeast-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 15,
+						"w": 41,
+						"h": 31
+					},
+					"frame": {
+						"x": 893,
+						"y": 105,
+						"w": 41,
+						"h": 31
+					}
+				},
+				{
+					"filename": "fireball-southwest-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 19,
+						"w": 45,
+						"h": 30
+					},
+					"frame": {
+						"x": 906,
+						"y": 171,
+						"w": 45,
+						"h": 30
+					}
+				},
+				{
+					"filename": "fireball-southeast-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 20,
+						"w": 48,
+						"h": 29
+					},
+					"frame": {
+						"x": 953,
+						"y": 105,
+						"w": 48,
+						"h": 29
+					}
+				},
+				{
+					"filename": "fireball-northeast-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 15,
+						"w": 44,
+						"h": 30
+					},
+					"frame": {
+						"x": 907,
+						"y": 138,
+						"w": 44,
+						"h": 30
+					}
+				},
+				{
+					"filename": "fireball-southwest-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 19,
+						"w": 47,
+						"h": 29
+					},
+					"frame": {
+						"x": 953,
+						"y": 136,
+						"w": 47,
+						"h": 29
+					}
+				},
+				{
+					"filename": "fireball-southeast-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 20,
+						"w": 46,
+						"h": 29
+					},
+					"frame": {
+						"x": 953,
+						"y": 167,
+						"w": 46,
+						"h": 29
+					}
+				},
+				{
+					"filename": "fireball-southwest-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 19,
+						"w": 44,
+						"h": 30
+					},
+					"frame": {
+						"x": 953,
+						"y": 198,
+						"w": 44,
+						"h": 30
+					}
+				},
+				{
+					"filename": "fireball-east-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 23,
+						"w": 57,
+						"h": 18
+					},
+					"frame": {
+						"x": 846,
+						"y": 1,
+						"w": 57,
+						"h": 18
+					}
+				},
+				{
+					"filename": "fireball-east-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 23,
+						"w": 55,
+						"h": 18
+					},
+					"frame": {
+						"x": 846,
+						"y": 21,
+						"w": 55,
+						"h": 18
+					}
+				},
+				{
+					"filename": "fireball-southwest-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 20,
+						"w": 43,
+						"h": 29
+					},
+					"frame": {
+						"x": 846,
+						"y": 41,
+						"w": 43,
+						"h": 29
+					}
+				},
+				{
+					"filename": "fireball-southwest-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 20,
+						"w": 41,
+						"h": 29
+					},
+					"frame": {
+						"x": 891,
+						"y": 41,
+						"w": 41,
+						"h": 29
+					}
+				},
+				{
+					"filename": "fireball-northwest-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 15,
+						"w": 42,
+						"h": 29
+					},
+					"frame": {
+						"x": 846,
+						"y": 72,
+						"w": 42,
+						"h": 29
+					}
+				},
+				{
+					"filename": "fireball-southeast-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 20,
+						"w": 42,
+						"h": 29
+					},
+					"frame": {
+						"x": 890,
+						"y": 72,
+						"w": 42,
+						"h": 29
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:4f9f03e2639c09601a36365e3e07e2a9:c6d33038d442ac950445d59b9a33226c:9b6e6842273e8724f51d1457138f1678$"
+	}
+}

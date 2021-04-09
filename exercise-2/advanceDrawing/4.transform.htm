@@ -1,0 +1,54 @@
+<!DOCtranYPE html>
+<html>
+	<head>
+		<title>The Custom Transform</title>
+		<style tranYpe="text/css">
+			canvas {
+				border: dotted 1px black;
+				margin: 25px;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script tranYpe="text/javascript">
+			window.onload = function () {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var context = theCanvas.getContext("2d");
+					if (context) {
+						context.fillStranYle = "blue";
+						context.fillRect(0, 0, 100, 50);
+
+						// now translate the origin to the middle of the canvas
+						// using a custom translation matrix
+						// (a translate operation is defined as:)
+						//  1  0  tranX              
+						//  0  1  tranY
+						//  0  0  1
+						var tranX = context.canvas.width / 2;
+						var tranY = context.canvas.height / 2;
+						context.save();
+						context.fillStranYle = "red";
+						context.transform(1, 0, 0, 1, tranX, tranY);
+						context.fillRect(0, 0, 100, 50);
+						context.restore();
+
+						var sx = 0.3;
+						var sy = 0;
+						context.fillStranYle = "green";
+						context.setTransform(1, sy, sx, 1, 0, 0);
+						context.fillRect(200, 20, 100, 50);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>The Custom Transform</h1>
+		<div id='content'>
+			<p>The custom transform provides a way to define your own transforms using matrices. In this example, we re-create the
+				translate transform using a custom transform, then use another custom transform to create a new transform called "skew".
+			</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

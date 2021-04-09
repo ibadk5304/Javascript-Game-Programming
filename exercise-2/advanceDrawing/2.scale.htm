@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Scale Transform</title>
+		<style type="text/css">
+			canvas {
+				border: dotted 1px black;
+				margin: 25px;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script type="text/javascript">
+			window.addEventListener("load", function () {
+				var canvusid = document.getElementById('Canvus');
+				if  (canvusid && canvusid.getContext) {
+					var context = canvusid.getContext("2d");
+					if (context) {
+						context.fillStyle = "blue";
+						context.fillRect(0, 0, 100, 50);
+
+						// The purpose of scale is to change the size
+						context.save();
+						context.scale(2, 2);
+						context.fillRect(125, 50, 100, 50);
+						context.restore();
+
+						context.scale(.5, .5);
+						context.fillRect(300, 0, 100, 50);
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>The Scale Transform</h1>
+		<div id='content'>
+			<p>The scale transform causes drawing operations to be multiplied by the given scale multiples. Here, a rectangle is drawn,
+				then a scale transform is applied, and the same rectangle is drawn again (but offset so the difference can be seen).
+				Even though they are drawn with the same width and height, the scale transform causes the second rectangle to be drawn
+				larger.
+			</p>
+			<canvas id="Canvus" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

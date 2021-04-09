@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Canvas Test With No Buffering</title>
+		<link rel="stylesheet" href="../../style.css" />
+		<script type="text/javascript">
+			var rectY = 200, rectW = 40;
+			var rectX = -rectW;
+			var canvas = null;
+			var context = null;
+
+			function init() {
+				canvas = document.getElementById('testCanvas');
+				context = canvas.getContext("2d");
+
+				blank();
+
+				// draw the initial state of the canvas
+				context.fillStyle = "yellow";
+				context.fillRect(rectX, rectY, rectW, rectW);
+
+				// start the animation by requesting a time slice
+				// to draw the scene updates
+				requestAnimationFrame(anim) //This function allow the animation keeps going
+			}
+
+			function blank() {
+				// erase the canvas before each update cycle
+				context.fillStyle = "#00ddee";
+				context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+			}
+
+			function anim(timestamp) {
+				// while the object is still within the canvas, move it by a small amount
+				if (rectX < context.canvas.width) {
+					blank();
+					rectX += 5; // 
+					context.fillStyle = "green";
+					context.strokeStyle = "black";
+					context.lineWidth = 3;
+					context.fillRect(rectX, rectY, rectW, rectW);
+					context.strokeRect(rectX, rectY, rectW, rectW);
+				}
+				else {
+					rectX = -rectW; // otherwise reset to left side
+				}
+
+				// request another update frame from the browser
+				requestAnimationFrame(anim)
+			}
+
+			window.addEventListener("load", init)
+		</script>
+	</head>
+	<body>
+		<h1>Animation example with canvas</h1>
+		<div id="content">
+			<canvas id="testCanvas" width="400" height="400">
+				Canvas not supported
+			</canvas>
+		</div>
+	</body>
+</html>

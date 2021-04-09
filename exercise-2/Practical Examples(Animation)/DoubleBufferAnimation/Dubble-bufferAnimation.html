@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Canvas Test Using Double Buffering</title>
+		<link rel="stylesheet" href="../../style.css" />
+		<script type="text/javascript">
+			var canvas = null;				// reference to main page canvas
+			var context = null;				// on-screen canvas context
+			var bufferCanvas = null;		// off-screen canvas
+			var bufferCanvasCtx = null;		// off-screen canvas context
+			var flakeArray = [];			// array to hold snowflakes
+			var flakeTimer = null;			// timer for adding new flakes
+			var maxFlakes = 200;			// max # of flakes on screen
+
+			function Flake() {
+				this.x = Math.round(Math.random() * context.canvas.width);
+				this.y = -10;
+				this.drift = Math.random();
+				this.speed = Math.round(Math.random() * 3) + 1;
+				this.width = (Math.random() * 3) + 2;
+				this.height = this.width;
+			}
+
+			function init() {
+				// Get the canvas and a reference to the drawing context
+				canvas = document.getElementById('testCanvas');
+				context = canvas.getContext("2d");
+
+				// Build the off-screen canvas and get its context
+				bufferCanvas = document.createElement("canvas");
+				bufferCanvasCtx = bufferCanvas.getContext("2d");
+				bufferCanvasCtx.canvas.width = context.canvas.width;
+				bufferCanvasCtx.canvas.height = context.canvas.height;
+
+				// create a clipping region
+				// bufferCanvasCtx.beginPath();
+				// bufferCanvasCtx.fillStyle = "black";
+				// bufferCanvasCtx.fillRect(0, 0, bufferCanvas.width, bufferCanvas.height);
+				// bufferCanvasCtx.arc(bufferCanvas.width / 2, bufferCanvas.height / 2, bufferCanvas.height / 2, 0, 2 * Math.PI);
+				// bufferCanvasCtx.clip();
+
+				// initialize the flake objects
+				flakeTimer = setInterval(addFlake, 200);
+
+				// draw the initial canvas state
+				draw();
+
+				requestAnimationFrame(animate);
+			}
+
+			function addFlake() {
+				flakeArray[flakeArray.length] = new Flake();
+				if (flakeArray.length == maxFlakes) {
+					clearInterval(flakeTimer);
+				}
+			}
+
+			function blank() {
+				bufferCanvasCtx.fillStyle = "#330033";
+				bufferCanvasCtx.fillRect(0, 0, bufferCanvasCtx.canvas.width, bufferCanvasCtx.canvas.height);
+			}
+
+			function animate() {
+				blank();
+				update();
+				draw();
+				requestAnimationFrame(animate);
+			}
+
+			//It allows to make the snowfall at a different speed
+			function update() {
+				for (var i = 0; i < flakeArray.length; i++) {
+					if (flakeArray[i].y < context.canvas.height) {
+						flakeArray[i].y += flakeArray[i].speed;
+						if (flakeArray[i].y > context.canvas.height)
+							flakeArray[i].y = -5;
+						flakeArray[i].x += flakeArray[i].drift;
+						if (flakeArray[i].x > context.canvas.width)
+							flakeArray[i].x = 0;
+					}
+				}
+			}
+
+			function draw() {
+				context.save();
+
+				// draw each one of the updated snowflakes
+				for (var i = 0; i < flakeArray.length; i++) {
+					bufferCanvasCtx.fillStyle = "white";  //color defined 
+					bufferCanvasCtx.fillRect(flakeArray[i].x, flakeArray[i].y, flakeArray[i].width, flakeArray[i].height);
+				}
+
+				// copy the entire rendered image from the buffer canvas to the visible one
+				context.drawImage(bufferCanvas, 0, 0, bufferCanvas.width, bufferCanvas.height);
+
+				context.restore();
+			}
+
+			window.addEventListener("load", init)
+		</script>
+	</head>
+	<body>
+		<h1>Double-Buffered Animation</h1>
+		<div id='content'>
+			<canvas id="testCanvas" width="400" height="400">
+				Canvas not supported
+			</canvas>
+		</div>
+	</body>
+</html>

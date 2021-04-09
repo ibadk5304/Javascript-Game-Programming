@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drawing Lines</title>
+    <style type="text/css">
+        canvas {
+            border: dotted 1px black;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css" />
+    <script>
+        window.addEventListener("load", function () {
+            var theCanvas = document.getElementById('Canvas1');
+            if (theCanvas && theCanvas.getContext) {
+                var ctx = theCanvas.getContext("2d");
+                if (ctx) {
+                    ctx.fillStyle = "Red";
+                    ctx.fillRect(20, 20, 100, 100);
+
+                    //FOr the stroke
+                    ctx.lineWidth = 5;
+                    ctx.strokeStyle = "rgba(25,25,05,7)";
+                    ctx.strokeRect(20, 20, 100, 100);
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Drawing With Colors and Styles</h1>
+    <div id="content">
+        <p>This example shows how to set the drawing style</p>
+        <canvas id="Canvas1" width="500" height="200">Your browser does not support canvas.</canvas>
+    </div>
+</body>
+
+</html>
